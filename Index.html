@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shagun Jangra | Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind config-->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#6366f1"
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-gray-900 border-b border-gray-800">
+  <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="text-xl font-bold text-primary">Shagun Jangra</h1>
+    <ul class="flex space-x-6 text-sm">
+      <li><a href="#about" class="hover:text-primary">About</a></li>
+      <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+      <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+      <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero-->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    Computer Science Engineering Student
+  </h2>
+  <p class="text-gray-400 max-w-xl mb-6">
+    Aspiring Software Engineer focused on problem solving and building real-world systems.
+  </p>
+  <div class="flex space-x-4">
+    <a href="#projects" class="bg-primary px-6 py-2 rounded-md text-white hover:opacity-90">
+      View Projects
+    </a>
+    <a href="#" class="border border-gray-600 px-6 py-2 rounded-md hover:border-primary">
+      Download Resume
+    </a>
+  </div>
+</section>
+
+  <!-- About -->
+ <section id="about" class="py-20 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-primary">About Me</h2>
+    <p class="text-gray-400 leading-relaxed">
+      I am a Computer Science Engineering student at Chandigarh University with a strong
+      interest in software development and problem-solving. I enjoy building real-world
+      projects that combine clean design with solid logic. Currently, I am focused on
+      strengthening my data structures and algorithms, core computer science fundamentals,
+      and practical development skills to prepare for top product-based companies.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Skills-->
+  <section id="skills" class="py-20 px-6 bg-gray-800">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-primary">Skills</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+
+      <!-- Languages -->
+      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+        <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li>C++</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <!-- Core CS -->
+      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+        <h3 class="text-xl font-semibold mb-4">Core Computer Science</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li>Data Structures & Algorithms</li>
+          <li>DBMS</li>
+          <li>Operating Systems (Basics)</li>
+          <li>Computer Networks (Basics)</li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+        <h3 class="text-xl font-semibold mb-4">Tools & Technologies</h3>
+        <ul class="space-y-2 text-gray-400">
+          <li>Git & GitHub</li>
+          <li>Linux / Kali Linux</li>
+          <li>HTML, CSS, Tailwind CSS</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects -->
+<!-- Projects -->
+<section id="projects" class="py-20 px-6 bg-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-primary">
+      Projects
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
+        <h3 class="text-lg font-semibold mb-2">
+          Plagiarism Checker / Radar System
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Detects similarity in text using algorithmic matching techniques to identify plagiarism.
+        </p>
+      </div>
+
+      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
+        <h3 class="text-lg font-semibold mb-2">
+          Personal Finance Tracker
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Manages personal income and expenses with categorized tracking and visual reports.
+        </p>
+      </div>
+
+      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
+        <h3 class="text-lg font-semibold mb-2">
+          Bug Tracker
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Tracks, manages, and resolves software bugs efficiently during development cycles.
+        </p>
+      </div>
+
+      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
+        <h3 class="text-lg font-semibold mb-2">
+          Project Management System
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Manages tasks, progress, and collaboration across software development projects.
+        </p>
+      </div>
+
+      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
+        <h3 class="text-lg font-semibold mb-2">
+          Credit Card Fraud Detection System
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Identifies fraudulent credit card transactions using machine learning techniques.
+        </p>
+      </div>
+
+      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
+        <h3 class="text-lg font-semibold mb-2">
+          Arduino Based Radar Visualizer
+        </h3>
+        <p class="text-gray-400 text-sm">
+          Uses Arduino and sensors to detect and visually display nearby objects in real time.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+<section id="contact" class="py-20 px-6 bg-gray-800">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-primary">
+      Contact
+    </h2>
+
+    <p class="text-gray-400 mb-8">
+      Feel free to reach out for collaboration, opportunities, or discussions.
+    </p>
+
+    <div class="flex justify-center space-x-8 text-sm">
+
+      <a
+        href="mailto:shagun080607@gmail.com"
+        class="hover:text-primary transition"
+      >
+        📧 Email
+      </a>
+
+      <a
+        href="https://github.com/itsshagunkaizen"
+        target="_blank"
+        class="hover:text-primary transition"
+      >
+        💻 GitHub
+      </a>
+
+      <a
+        href="https://linkedin.com/in/shagun5"
+        target="_blank"
+        class="hover:text-primary transition"
+      >
+        🔗 LinkedIn
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+<footer class="py-6 text-center text-gray-500 text-sm bg-gray-900 border-t border-gray-800">
+  © 2025 Your Name. Built with ❤️ and discipline.
+</footer>
+
+
+</body>
+</html>
