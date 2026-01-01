@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+ <html lang="en" class="scroll-smooth">
+
+
   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,29 +23,63 @@
       }
     }
   </script>
+<!--animation-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans">
 
   <!-- Navbar -->
-  <header class="sticky top-0 bg-gray-900 border-b border-gray-800">
+<header 
+  data-aos="fade-down"
+  class="sticky top-0 z-50 bg-gray-900 border-b border-gray-800 transition-all duration-300"
+>
   <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-    <h1 class="text-xl font-bold text-primary">Shagun Jangra</h1>
-    <ul class="flex space-x-6 text-sm">
-      <li><a href="#about" class="hover:text-primary">About</a></li>
-      <li><a href="#skills" class="hover:text-primary">Skills</a></li>
-      <li><a href="#projects" class="hover:text-primary">Projects</a></li>
-      <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+    
+    <h1 class="text-xl font-bold text-primary">
+      Shagun Jangra
+    </h1>
+
+    <ul class="flex space-x-6 text-sm text-gray-300">
+      <li>
+        <a href="#about" class="hover:text-primary transition-colors duration-300">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="hover:text-primary transition-colors duration-300">
+          Skills
+        </a>
+      </li>
+      <li>
+        <a href="#projects" class="hover:text-primary transition-colors duration-300">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="hover:text-primary transition-colors duration-300">
+          Contact
+        </a>
+      </li>
     </ul>
+
   </nav>
 </header>
 
+
   <!-- Hero-->
-  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <section 
+  id="hero"
+  data-aos="fade-up"
+  class="min-h-screen flex flex-col justify-center items-center text-center px-6"
+>
+
     <img 
   src="assets/profile.jpg"
   alt="Shagun Jangra"
-  class="w-40 h-40 rounded-full mb-6 border-4 border-primary object-cover"
+  data-aos="zoom-in"
+  class="w-40 h-40 rounded-full mb-6 border-4 border-primary object-cover transition-transform duration-300 hover:scale-105"
 />
+
 
   <h2 class="text-4xl md:text-5xl font-bold mb-4">
     Computer Science Engineering Student
@@ -62,7 +99,7 @@
 </section>
 
   <!-- About -->
- <section id="about" class="py-20 px-6">
+ <section id="about" data-aos="fade-up" class="py-20 px-6">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="text-3xl font-bold mb-6 text-primary">About Me</h2>
     <p class="text-gray-400 leading-relaxed">
@@ -76,17 +113,25 @@
 </section>
 
 
-  <!-- Skills-->
-  <section id="skills" class="py-20 px-6 bg-gray-800">
+<!-- Skills -->
+<section id="skills" class="py-20 px-6 bg-gray-800">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12 text-primary">Skills</h2>
 
-    <div class="grid md:grid-cols-3 gap-8 text-center">
+    <h2 class="text-3xl font-bold text-center mb-12 text-primary">
+      Skills
+    </h2>
 
-      <!-- Languages -->
-      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-        <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
-        <ul class="space-y-2 text-gray-400">
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Programming Languages -->
+      <div 
+        data-aos="fade-up"
+        class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-primary hover:scale-105 transition-transform duration-300"
+      >
+        <h3 class="text-lg font-semibold mb-4">
+          Programming Languages
+        </h3>
+        <ul class="space-y-2 text-gray-400 text-sm leading-relaxed">
           <li>C++</li>
           <li>Python</li>
           <li>JavaScript</li>
@@ -94,9 +139,15 @@
       </div>
 
       <!-- Core CS -->
-      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-        <h3 class="text-xl font-semibold mb-4">Core Computer Science</h3>
-        <ul class="space-y-2 text-gray-400">
+      <div 
+        data-aos="fade-up"
+        data-aos-delay="100"
+        class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-primary hover:scale-105 transition-transform duration-300"
+      >
+        <h3 class="text-lg font-semibold mb-4">
+          Core Computer Science
+        </h3>
+        <ul class="space-y-2 text-gray-400 text-sm leading-relaxed">
           <li>Data Structures & Algorithms</li>
           <li>DBMS</li>
           <li>Operating Systems (Basics)</li>
@@ -105,9 +156,15 @@
       </div>
 
       <!-- Tools -->
-      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
-        <h3 class="text-xl font-semibold mb-4">Tools & Technologies</h3>
-        <ul class="space-y-2 text-gray-400">
+      <div 
+        data-aos="fade-up"
+        data-aos-delay="200"
+        class="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-primary hover:scale-105 transition-transform duration-300"
+      >
+        <h3 class="text-lg font-semibold mb-4">
+          Tools & Technologies
+        </h3>
+        <ul class="space-y-2 text-gray-400 text-sm leading-relaxed">
           <li>Git & GitHub</li>
           <li>Linux / Kali Linux</li>
           <li>HTML, CSS, Tailwind CSS</li>
@@ -117,7 +174,6 @@
     </div>
   </div>
 </section>
-
 
   
 <!-- Projects -->
@@ -129,9 +185,13 @@
 
     <div class="grid md:grid-cols-3 gap-8">
 
-      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
+      <div 
+  data-aos="zoom-in"
+  class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary hover:scale-105 transition-transform duration-300"
+>
+
         <h3 class="text-lg font-semibold mb-2">
-          Plagiarism Checker / Radar System
+          Plagiarism Checker 
         </h3>
         <p class="text-gray-400 text-sm">
           Detects similarity in text using algorithmic matching techniques to identify plagiarism.
@@ -144,8 +204,11 @@
   View on GitHub →
 </a>
       </div>
+<div 
+  data-aos="zoom-in"
+  class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary hover:scale-105 transition-transform duration-300"
+>
 
-      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
         <h3 class="text-lg font-semibold mb-2">
           Personal Finance Tracker
         </h3>
@@ -161,70 +224,87 @@
       </a>
 
       </div>
-      <div class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary transition">
-        <h3 class="text-lg font-semibold mb-2">
-          Credit Card Fraud Detection System
-        </h3>
-        <p class="text-gray-400 text-sm">
-          Detects fraudulent credit card transactions using machine learning models.
-        </p>
-           <a 
-  href="https://github.com/itsshagunkaizen/Creditcard-Fraud-Detection.git"
-  target="_blank"
-  class="inline-block mt-4 text-primary hover:underline text-sm"
+    <div 
+  data-aos="zoom-in"
+  class="bg-gray-800 border border-gray-700 p-6 rounded-lg hover:border-primary hover:scale-105 transition-transform duration-300"
 >
-  View on GitHub →
-      </a>
-    </div>
+  <h3 class="text-lg font-semibold mb-2">
+    Credit Card Fraud Detection System
+  </h3>
+
+  <p class="text-gray-400 text-sm">
+    Detects fraudulent credit card transactions using machine learning models.
+  </p>
+
+  <a 
+    href="https://github.com/itsshagunkaizen/Creditcard-Fraud-Detection.git"
+    target="_blank"
+    class="inline-block mt-4 text-primary hover:underline text-sm"
+  >
+    View on GitHub →
+  </a>
+</div>
+
   </div>
 </section>
 
+ <!-- Footer -->
+<footer 
+  data-aos="fade-up"
+  class="bg-gray-900 border-t border-gray-800 py-10 px-6"
+>
+  <div class="max-w-6xl mx-auto text-center">
 
-  <!-- Contact -->
-<section id="contact" class="py-20 px-6 bg-gray-800">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6 text-primary">
-      Contact
-    </h2>
+    <h3 class="text-lg font-semibold text-primary mb-2">
+      Shagun Jangra
+    </h3>
 
-    <p class="text-gray-400 mb-8">
-      Feel free to reach out for collaboration, opportunities, or discussions.
+    <p class="text-gray-400 text-sm mb-4">
+    Computer Science Engineering Student | Developer | Learner
     </p>
 
-    <div class="flex justify-center space-x-8 text-sm">
-
-      <a
-        href="mailto:shagun080607@gmail.com"
-        class="hover:text-primary transition"
-      >
-        📧 Email
+    <div class="flex justify-center space-x-6 text-gray-400 text-sm">
+      <a href="https://github.com/itsshagunkaizen" target="_blank"
+         class="hover:text-primary transition-colors duration-300">
+        GitHub
       </a>
-
-      <a
-        href="https://github.com/itsshagunkaizen"
-        target="_blank"
-        class="hover:text-primary transition"
-      >
-        💻 GitHub
+      <a href="https://www.linkedin.com/" target="_blank"
+         class="hover:text-primary transition-colors duration-300">
+        LinkedIn
       </a>
-
-      <a
-        href="https://linkedin.com/in/shagun5"
-        target="_blank"
-        class="hover:text-primary transition"
-      >
-        🔗 LinkedIn
+      <a href="mailto:yourmail@gmail.com"
+         class="hover:text-primary transition-colors duration-300">
+        Email
       </a>
-
     </div>
-  </div>
-</section>
 
-  <!-- Footer -->
-<footer class="py-6 text-center text-gray-500 text-sm bg-gray-900 border-t border-gray-800">
-  © 2025 Shagun Jangra. Built with love and discipline.
+    <p class="text-gray-500 text-xs mt-6">
+      © 2026 Shagun Jangra. All rights reserved. Feel free to connect!
+    </p>
+
+  </div>
 </footer>
 
+
+<!--animation-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+<script>
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("bg-gray-950", "shadow-lg");
+    } else {
+      header.classList.remove("bg-gray-950", "shadow-lg");
+    }
+  });
+</script>
 
 </body>
 </html>
