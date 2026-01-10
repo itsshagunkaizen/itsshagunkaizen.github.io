@@ -5,21 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shagun Jangra | Portfolio</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Tailwind Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#6366f1"
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Tailwind CSS (Precompiled – GitHub Pages Safe) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/tailwindcss@3.4.1/dist/tailwind.min.css"
+  />
 
   <!-- AOS Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -28,13 +18,172 @@
 <body class="bg-gray-900 text-gray-100 font-sans">
 
 <!-- Navbar -->
-<header data-aos="fade-down"
-  class="sticky top-0 z-50 bg-gray-900 border-b border-gray-800 transition-all duration-300">
+<header
+  data-aos="fade-down"
+  class="sticky top-0 z-50 bg-gray-900 border-b border-gray-800">
   <nav class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
-    <h1 class="text-xl font-bold text-primary">Shagun Jangra</h1>
+    <h1 class="text-xl font-bold text-indigo-500">Shagun Jangra</h1>
     <ul class="flex space-x-6 text-sm text-gray-300">
-      <li><a href="#about" class="hover:text-primary">About</a></li>
-      <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+      <li><a href="#about" class="hover:text-indigo-400">About</a></li>
+      <li><a href="#skills" class="hover:text-indigo-400">Skills</a></li>
+      <li><a href="#projects" class="hover:text-indigo-400">Projects</a></li>
+      <li><a href="#contact" class="hover:text-indigo-400">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section
+  class="min-h-screen flex flex-col justify-center items-center text-center px-6"
+  data-aos="fade-up">
+
+  <img
+    src="assets/profile.jpg"
+    alt="Shagun Jangra"
+    class="w-40 h-40 rounded-full mb-6 border-4 border-indigo-500 object-cover"
+  />
+
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+    Computer Science Engineering Student
+  </h2>
+
+  <p class="text-gray-400 max-w-xl mb-6">
+    Aspiring Software Engineer focused on problem solving and building real-world systems.
+  </p>
+
+  <div class="flex space-x-4">
+    <a
+      href="#projects"
+      class="bg-indigo-600 px-6 py-2 rounded-md text-white hover:opacity-90">
+      View Projects
+    </a>
+
+    <a
+      href="resume.pdf"
+      download
+      class="border border-gray-600 px-6 py-2 rounded-md hover:border-indigo-500">
+      Download Resume
+    </a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-20 px-6" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6 text-indigo-500">About Me</h2>
+    <p class="text-gray-400 leading-relaxed">
+      I am a Computer Science Engineering student at Chandigarh University with a strong
+      interest in software development and problem-solving. I enjoy building real-world
+      projects and strengthening my core CS fundamentals.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-20 px-6 bg-gray-800">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-indigo-500">Skills</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+        <h3 class="font-semibold mb-4">Programming Languages</h3>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li>C++</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+        <h3 class="font-semibold mb-4">Core Computer Science</h3>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li>Data Structures & Algorithms</li>
+          <li>DBMS</li>
+          <li>Operating Systems (Basics)</li>
+          <li>Computer Networks (Basics)</li>
+        </ul>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+        <h3 class="font-semibold mb-4">Tools & Technologies</h3>
+        <ul class="text-gray-400 text-sm space-y-2">
+          <li>Git & GitHub</li>
+          <li>Linux / Kali Linux</li>
+          <li>HTML, CSS, Tailwind CSS</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-indigo-500">Projects</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+        <h3 class="font-semibold mb-2">Plagiarism Checker</h3>
+        <p class="text-gray-400 text-sm">
+          Detects similarity in text using algorithmic matching techniques.
+        </p>
+        <a
+          href="https://github.com/itsshagunkaizen/Plagiarism-Checker.git"
+          target="_blank"
+          class="inline-block mt-4 text-indigo-400 hover:underline text-sm">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+        <h3 class="font-semibold mb-2">Personal Finance Tracker</h3>
+        <p class="text-gray-400 text-sm">
+          Manages personal income and expenses with categorized tracking.
+        </p>
+        <a
+          href="https://github.com/itsshagunkaizen/Personal-finance-tracker.git"
+          target="_blank"
+          class="inline-block mt-4 text-indigo-400 hover:underline text-sm">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+        <h3 class="font-semibold mb-2">Credit Card Fraud Detection</h3>
+        <p class="text-gray-400 text-sm">
+          Machine learning based fraud detection system.
+        </p>
+        <a
+          href="https://github.com/itsshagunkaizen/Creditcard-Fraud-Detection.git"
+          target="_blank"
+          class="inline-block mt-4 text-indigo-400 hover:underline text-sm">
+          View on GitHub →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-gray-800 py-10 text-center">
+  <h3 class="text-indigo-500 font-semibold">Shagun Jangra</h3>
+  <p class="text-gray-400 text-sm mt-2">
+    Computer Science Engineering Student | Developer | Learner
+  </p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>      <li><a href="#skills" class="hover:text-primary">Skills</a></li>
       <li><a href="#projects" class="hover:text-primary">Projects</a></li>
       <li><a href="#contact" class="hover:text-primary">Contact</a></li>
     </ul>
